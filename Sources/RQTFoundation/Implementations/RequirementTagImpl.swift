@@ -26,5 +26,4 @@ extension RequirementTagImpl: Tag {
         self.rawValue = value
         self.rawCreatedAt = createdAt
     }
-
 }
