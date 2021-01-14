@@ -8,9 +8,9 @@ public protocol Tag {
     typealias ID = Artifact.ID
     var id: ID? { get }
     var target: ID { get }
-    var span: (Int32, Int32)? { get }
+    var span: (UInt32, UInt32)? { get }
     var attribute: String { get }
     var value: String? { get }
     var createdAt: Date? { get }
-    init(id: ID?, target: ID, span: (Int32, Int32)?, attribute: String, value: String?, createdAt: Date?)
+    init(id: ID?, target: ID, span: (UInt32, UInt32)?, attribute: String, value: String?, createdAt: Date?)
 }
