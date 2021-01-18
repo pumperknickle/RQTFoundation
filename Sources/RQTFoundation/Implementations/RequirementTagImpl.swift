@@ -1,6 +1,6 @@
 import Foundation
 
-public struct RequirementTagImpl: Codable {
+public struct RequirementTagImpl {
     private let rawId: ID?
     private let rawTarget: ID
     private let rawSpan: UInt64?
