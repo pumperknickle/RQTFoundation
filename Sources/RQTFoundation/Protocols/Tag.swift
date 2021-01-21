@@ -15,4 +15,5 @@ public protocol Tag: Codable {
     var value: String? { get }
     var createdAt: Date? { get }
     init(id: ID?, target: ID, span: (UInt32, UInt32)?, attribute: String, value: String?, createdAt: Date?)
+    init(id: ID?, target: ID, span: UInt64?, attribute: String, value: String?, createdAt: Date?)
 }
