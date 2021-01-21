@@ -8,7 +8,9 @@ public protocol Tag: Codable {
     typealias ID = Artifact.ID
     var id: ID? { get }
     var target: ID { get }
-    var span: (UInt32, UInt32)? { get }
+    var span: UInt64? { get }
+    var leftSpan: UInt32? { get }
+    var rightSpan: UInt32? { get }
     var attribute: String { get }
     var value: String? { get }
     var createdAt: Date? { get }
