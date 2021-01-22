@@ -11,7 +11,7 @@ public protocol Tag: Codable {
     var left: Int? { get }
     var right: Int? { get }
     var attribute: String { get }
-    var value: String? { get }
+    var value: String { get }
     var createdAt: Date? { get }
-    init(id: ID?, target: ID, span: (Int, Int)?, attribute: String, value: String?, createdAt: Date?)
+    init(id: ID?, target: ID, span: (Int, Int)?, attribute: String, value: String, createdAt: Date?)
 }
