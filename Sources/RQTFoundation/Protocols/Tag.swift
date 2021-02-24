@@ -1,6 +1,6 @@
 import Foundation
 
-/// Human labelled information on a textual artifact which corresponds to
+/// Labelled information on a textual artifact which corresponds to
 /// a span of the text (span != nil)
 /// or the entire artifact itself (span == nil)
 public protocol Tag: Codable {
