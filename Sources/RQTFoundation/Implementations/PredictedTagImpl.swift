@@ -45,5 +45,6 @@ extension PredictedTagImpl: Tag {
 }
 
 extension PredictedTagImpl: Prediction {
+    public var confidence: Float! { return rawConfidence }
     public var timeOfPrediction: Date! { return rawCreatedAt }
 }
